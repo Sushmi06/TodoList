@@ -1,0 +1,45 @@
+.main{
+    margin:auto;
+    margin-top:200px;
+    margin-bottom:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-container{
+    width : 300px;
+    border:1px solid red;
+    border-radius:10px;
+    box-shadow:2px 2px 5px gray;
+    text-align:center;
+    margin:auto;
+    color:red;
+}
+
+input[type = "text"]{
+    border:1px solid red;
+    border-radius: 5px;
+    padding:5px;
+    margin-bottom: 15px;
+}
+
+button{
+    border:1px solid red;
+    background-color: red;
+    color:white;
+    border-radius: 15px;
+    padding:5px 10px;
+    margin-bottom:15px;
+    
+}
+
+.pagination{
+    text-align :center;
+    margin-top: 100px;
+}
+
+a{
+    font-size:20px;
+    margin:10px;
+    color:red;
+    text-decoration: none;
+}
