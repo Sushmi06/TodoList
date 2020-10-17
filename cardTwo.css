@@ -11,6 +11,9 @@ body{
 .head-block{
     text-align: center;
 }
+.mobile-head-block{
+    display:none;
+}
 .line{
     display: inline-block;
     width : 100px;
@@ -72,4 +75,20 @@ a{
     margin:20px;
     color:red;
     text-decoration: none;
+}
+
+@media(max-width:480px){
+    .line{
+        display:none;
+    }
+    .back{
+        display: none;
+    }
+    .head-block{
+        display: none;
+    }
+    .mobile-head-block{
+        display: initial;
+        margin:20%;
+    }
 }
