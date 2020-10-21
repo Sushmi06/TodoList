@@ -1,12 +1,106 @@
-.main{
-    margin:auto;
-    margin-top:200px;
-    margin-bottom:30px;
+html, body {
+    overflow: auto;
+}
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    opacity:0.7;
+    filter: blur(10px);
+}
+
+.head-block{
+    text-align: center;
+}
+.mobile-head-block{
+    display:none;
+}
+.line{
+    display: inline-block;
+    width : 100px;
+}
+
+.heading{
+    display : inline-block;   
+}
+
+.back{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom: 40px;
+    font-size: 25px;
 }
 
 .card-container{
-    width : 300px;
+    width : 200px;
+    border:1px solid red;
+    border-radius:10px;
+    box-shadow:2px 2px 5px gray;
+    padding-bottom:100px;
+    text-align:center;
+    margin:auto;
+    position:relative;
+}
+
+.card-head-text{
+    color:red;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-body-text{
+    margin-right:0px;
+    margin-left:40px;
+    color:red;
+}
+
+.fa-arrow-circle-left{
+    font-size:25px;
+    color:red;
+}
+
+.fa-plus-circle{
+    font-size:25px;
+    color:red;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+.pagination{
+    margin:30px;
+    text-align :center;
+}
+
+a{
+    font-size:20px;
+    margin:20px;
+    color:red;
+    text-decoration: none;
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    margin-top:200px;
+}
+.main-head{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:relative;
+    z-index :10;
+}
+
+.card-container-head{
     border:1px solid red;
     border-radius:10px;
     box-shadow:2px 2px 5px gray;
@@ -18,8 +112,12 @@
 input[type = "text"]{
     border:1px solid red;
     border-radius: 5px;
+    display: block;
     padding:5px;
-    margin-bottom: 15px;
+    margin-top:10px;
+    margin-bottom:5px;
+    margin-left:50px;
+    margin-right:50px;
 }
 
 button{
@@ -27,14 +125,14 @@ button{
     background-color: red;
     color:white;
     border-radius: 15px;
+    margin-top:0px;
     padding:5px 10px;
     margin-bottom:15px;
-    
 }
 
-.pagination{
+.pagination-head{
     text-align :center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 a{
@@ -46,11 +144,30 @@ a{
 
 
 @media(max-width:480px){
-    .pagination{
+    .pagination-head{
         margin-top: 50px;
     }
-    .card-container{
+    .card-container-head{
         padding-top:20px;
         padding-bottom:20px;
+    } 
+    .line{
+        display:none;
+    }
+    .back{
+        display: none;
+    }
+    .head-block{
+        display: none;
+    }
+    .fa-arrow-circle-left{
+        font-size:2rem;
+        color:red;
+        align-self: center;
+        margin:5px;
+    }
+    .mobile-head-block{
+        display:initial;
+        text-align: center;
     }
 }
